@@ -36,3 +36,5 @@ COPY files/var/lib/graphite/conf/storage-aggregation.conf /var/lib/graphite/conf
 COPY files/etc/supervisord.conf /etc/supervisord.conf
 
 COPY files/start.sh /start.sh
+
+VOLUME ["/var/lib/graphite/storage", "/var/log"]
